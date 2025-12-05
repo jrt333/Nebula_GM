@@ -6,6 +6,9 @@
 
 NB Command 是一款专为 [Nebula](https://github.com/Melledy/Nebula) 设计的图形化远程GM命令工具。 该工具提供了直观易用的界面，可以方便地执行各种游戏服务器管理命令，无需手动输入复杂的命令行指令。
 
+> 现在新增了一个无需安装的网页后台（`web-admin` 目录），可直接通过浏览器调用服务端 `/api/command` 完成 GM 操作。
+> 只需把 `web-admin` 整个目录上传到任意静态空间或直接双击 `index.html` 打开即可，无需依赖外部字体或网络请求读取本地 JSON。
+
 ## 功能特性
 
 -  多语言支持：支持中文、英文、日文和韩文
@@ -14,6 +17,12 @@ NB Command 是一款专为 [Nebula](https://github.com/Melledy/Nebula) 设计的
 -  配置保存：自动保存服务器地址和认证令牌
 -  命令历史：记录执行过的命令历史，便于追溯和重复使用
 -  数据手册：内置角色和物品数据手册，支持快速查找和选择
+
+### Web 版后台
+
+- 纯静态页面，双击 `web-admin/index.html` 或使用本地 HTTP 服务即可运行。
+- 支持 account / setlevel / give / giveall / clean / character / disc / reload / build 指令。
+- 内置 `!mail` 欢迎礼包功能：固定标题「欢迎来到大鸟转转转-星塔旅人！」、发送者「GM」、正文「欢迎来到大鸟转转转-星塔旅人！QQ交流群：531390126，祝你游戏愉快！」，可从物品列表添加附件后直连服务端。
 
 ## 安装与运行
 
