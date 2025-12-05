@@ -1,0 +1,19 @@
+package emu.nebula.server.handlers;
+
+import emu.nebula.net.NetHandler;
+import emu.nebula.net.NetMsgId;
+import emu.nebula.net.HandlerId;
+import emu.nebula.net.GameSession;
+
+@HandlerId(NetMsgId.none)
+public class Handler extends NetHandler {
+
+    @Override
+    public byte[] handle(GameSession session, byte[] message) throws Exception {
+        // Template hanlder
+        
+        // Encode and send
+        return session.encodeMsg(NetMsgId.none);
+    }
+
+}
