@@ -1,0 +1,199 @@
+{
+  "characters": [
+    {
+      "id": 103,
+      "name": "コハク",
+      "element": "FIRE"
+    },
+    {
+      "id": 106,
+      "name": "？？？",
+      "element": "DARK"
+    },
+    {
+      "id": 107,
+      "name": "ティリア",
+      "element": "LIGHT"
+    },
+    {
+      "id": 108,
+      "name": "カシミラ",
+      "element": "FIRE"
+    },
+    {
+      "id": 109,
+      "name": "？？？",
+      "element": "LIGHT"
+    },
+    {
+      "id": 110,
+      "name": "？？？",
+      "element": "DARK"
+    },
+    {
+      "id": 111,
+      "name": "アヤメ",
+      "element": "AQUA"
+    },
+    {
+      "id": 112,
+      "name": "セイナ",
+      "element": "WIND"
+    },
+    {
+      "id": 113,
+      "name": "シーミャオ",
+      "element": "AQUA"
+    },
+    {
+      "id": 114,
+      "name": "？？？",
+      "element": "FIRE"
+    },
+    {
+      "id": 115,
+      "name": "？？？",
+      "element": "LIGHT"
+    },
+    {
+      "id": 116,
+      "name": "レイセン",
+      "element": "EARTH"
+    },
+    {
+      "id": 117,
+      "name": "ジンリン",
+      "element": "LIGHT"
+    },
+    {
+      "id": 118,
+      "name": "クルニス",
+      "element": "DARK"
+    },
+    {
+      "id": 119,
+      "name": "ナノハ",
+      "element": "WIND"
+    },
+    {
+      "id": 120,
+      "name": "カナーチェ",
+      "element": "WIND"
+    },
+    {
+      "id": 123,
+      "name": "アンズ",
+      "element": "WIND"
+    },
+    {
+      "id": 125,
+      "name": "フリージア",
+      "element": "AQUA"
+    },
+    {
+      "id": 126,
+      "name": "フローラ",
+      "element": "FIRE"
+    },
+    {
+      "id": 127,
+      "name": "テレサ",
+      "element": "AQUA"
+    },
+    {
+      "id": 129,
+      "name": "？？？",
+      "element": "EARTH"
+    },
+    {
+      "id": 130,
+      "name": "？？？",
+      "element": "AQUA"
+    },
+    {
+      "id": 132,
+      "name": "ミネルバ",
+      "element": "LIGHT"
+    },
+    {
+      "id": 133,
+      "name": "ナツカ",
+      "element": "WIND"
+    },
+    {
+      "id": 134,
+      "name": "フユカ",
+      "element": "FIRE"
+    },
+    {
+      "id": 135,
+      "name": "ミスティ",
+      "element": "DARK"
+    },
+    {
+      "id": 136,
+      "name": "？？？",
+      "element": "WIND"
+    },
+    {
+      "id": 141,
+      "name": "チーシア",
+      "element": "FIRE"
+    },
+    {
+      "id": 142,
+      "name": "コゼット",
+      "element": "DARK"
+    },
+    {
+      "id": 143,
+      "name": "？？？",
+      "element": "WIND"
+    },
+    {
+      "id": 144,
+      "name": "チトセ",
+      "element": "AQUA"
+    },
+    {
+      "id": 145,
+      "name": "？？？",
+      "element": "DARK"
+    },
+    {
+      "id": 147,
+      "name": "キャラメル",
+      "element": "DARK"
+    },
+    {
+      "id": 149,
+      "name": "グレイ",
+      "element": "EARTH"
+    },
+    {
+      "id": 150,
+      "name": "ラール",
+      "element": "LIGHT"
+    },
+    {
+      "id": 155,
+      "name": "シア",
+      "element": "LIGHT"
+    },
+    {
+      "id": 156,
+      "name": "ナズナ",
+      "element": "EARTH"
+    },
+    {
+      "id": 158,
+      "name": "？？？",
+      "element": "FIRE"
+    },
+    {
+      "id": 159,
+      "name": "？？？",
+      "element": "EARTH"
+    }
+  ]
+}

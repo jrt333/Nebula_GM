@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emu.nebula.nbcommand.controller.AboutDialogController" prefHeight="300.0" prefWidth="400.0">
+    <children>
+        <Label fx:id="titleLabel" text="NB指令远程GM工具">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </Label>
+        
+        <Label fx:id="versionLabel" text="版本: v0.0.0-dev">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        
+        <Label fx:id="authorLabel" text="作者: 战意电竞丶圆头奶龙仙人">
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        
+        <Label fx:id="introLabel" text="简介:" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </Label>
+        
+        <TextArea fx:id="introTextArea" editable="false" prefHeight="100.0" prefWidth="360.0" wrapText="true" text="这是一个用于远程执行游戏服务器指令的图形化工具。该工具支持多种游戏管理功能，包括玩家管理、物品管理、角色管理、游戏副本、服务器控制和邮件系统等。">
+            <VBox.margin>
+                <Insets left="20.0" right="20.0" top="5.0" />
+            </VBox.margin>
+        </TextArea>
+        
+        <HBox alignment="CENTER">
+            <children>
+                <Button fx:id="closeButton" mnemonicParsing="false" text="关闭">
+                    <HBox.margin>
+                        <Insets top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>

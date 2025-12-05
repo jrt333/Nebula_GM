@@ -1,0 +1,199 @@
+{
+  "characters": [
+    {
+      "id": 103,
+      "name": "코하쿠",
+      "element": "FIRE"
+    },
+    {
+      "id": 106,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 107,
+      "name": "틸리아",
+      "element": "LIGHT"
+    },
+    {
+      "id": 108,
+      "name": "카시미라",
+      "element": "FIRE"
+    },
+    {
+      "id": 109,
+      "name": "???",
+      "element": "LIGHT"
+    },
+    {
+      "id": 110,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 111,
+      "name": "아야메",
+      "element": "AQUA"
+    },
+    {
+      "id": 112,
+      "name": "세이나",
+      "element": "WIND"
+    },
+    {
+      "id": 113,
+      "name": "시먀오",
+      "element": "AQUA"
+    },
+    {
+      "id": 114,
+      "name": "???",
+      "element": "FIRE"
+    },
+    {
+      "id": 115,
+      "name": "???",
+      "element": "LIGHT"
+    },
+    {
+      "id": 116,
+      "name": "레이센",
+      "element": "EARTH"
+    },
+    {
+      "id": 117,
+      "name": "징린",
+      "element": "LIGHT"
+    },
+    {
+      "id": 118,
+      "name": "크루니스",
+      "element": "DARK"
+    },
+    {
+      "id": 119,
+      "name": "나노하",
+      "element": "WIND"
+    },
+    {
+      "id": 120,
+      "name": "카나체",
+      "element": "WIND"
+    },
+    {
+      "id": 123,
+      "name": "안즈",
+      "element": "WIND"
+    },
+    {
+      "id": 125,
+      "name": "프리지아",
+      "element": "AQUA"
+    },
+    {
+      "id": 126,
+      "name": "플로라",
+      "element": "FIRE"
+    },
+    {
+      "id": 127,
+      "name": "테레사",
+      "element": "AQUA"
+    },
+    {
+      "id": 129,
+      "name": "???",
+      "element": "EARTH"
+    },
+    {
+      "id": 130,
+      "name": "???",
+      "element": "AQUA"
+    },
+    {
+      "id": 132,
+      "name": "미네르바",
+      "element": "LIGHT"
+    },
+    {
+      "id": 133,
+      "name": "나츠카",
+      "element": "WIND"
+    },
+    {
+      "id": 134,
+      "name": "후유카",
+      "element": "FIRE"
+    },
+    {
+      "id": 135,
+      "name": "미스티",
+      "element": "DARK"
+    },
+    {
+      "id": 136,
+      "name": "???",
+      "element": "WIND"
+    },
+    {
+      "id": 141,
+      "name": "치시아",
+      "element": "FIRE"
+    },
+    {
+      "id": 142,
+      "name": "코제트",
+      "element": "DARK"
+    },
+    {
+      "id": 143,
+      "name": "???",
+      "element": "WIND"
+    },
+    {
+      "id": 144,
+      "name": "치토세",
+      "element": "AQUA"
+    },
+    {
+      "id": 145,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 147,
+      "name": "캐러멜",
+      "element": "DARK"
+    },
+    {
+      "id": 149,
+      "name": "그레이",
+      "element": "EARTH"
+    },
+    {
+      "id": 150,
+      "name": "라루",
+      "element": "LIGHT"
+    },
+    {
+      "id": 155,
+      "name": "시아",
+      "element": "LIGHT"
+    },
+    {
+      "id": 156,
+      "name": "나즈나",
+      "element": "EARTH"
+    },
+    {
+      "id": 158,
+      "name": "???",
+      "element": "FIRE"
+    },
+    {
+      "id": 159,
+      "name": "???",
+      "element": "EARTH"
+    }
+  ]
+}

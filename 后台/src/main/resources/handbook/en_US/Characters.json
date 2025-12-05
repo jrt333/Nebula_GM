@@ -1,0 +1,199 @@
+{
+  "characters": [
+    {
+      "id": 103,
+      "name": "Amber",
+      "element": "FIRE"
+    },
+    {
+      "id": 106,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 107,
+      "name": "Tilia",
+      "element": "LIGHT"
+    },
+    {
+      "id": 108,
+      "name": "Kasimira",
+      "element": "FIRE"
+    },
+    {
+      "id": 109,
+      "name": "???",
+      "element": "LIGHT"
+    },
+    {
+      "id": 110,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 111,
+      "name": "Iris",
+      "element": "AQUA"
+    },
+    {
+      "id": 112,
+      "name": "Noya",
+      "element": "WIND"
+    },
+    {
+      "id": 113,
+      "name": "Shimiao",
+      "element": "AQUA"
+    },
+    {
+      "id": 114,
+      "name": "???",
+      "element": "FIRE"
+    },
+    {
+      "id": 115,
+      "name": "???",
+      "element": "LIGHT"
+    },
+    {
+      "id": 116,
+      "name": "Ridge",
+      "element": "EARTH"
+    },
+    {
+      "id": 117,
+      "name": "Jinglin",
+      "element": "LIGHT"
+    },
+    {
+      "id": 118,
+      "name": "Coronis",
+      "element": "DARK"
+    },
+    {
+      "id": 119,
+      "name": "Nanoha",
+      "element": "WIND"
+    },
+    {
+      "id": 120,
+      "name": "Canace",
+      "element": "WIND"
+    },
+    {
+      "id": 123,
+      "name": "Ann",
+      "element": "WIND"
+    },
+    {
+      "id": 125,
+      "name": "Freesia",
+      "element": "AQUA"
+    },
+    {
+      "id": 126,
+      "name": "Flora",
+      "element": "FIRE"
+    },
+    {
+      "id": 127,
+      "name": "Teresa",
+      "element": "AQUA"
+    },
+    {
+      "id": 129,
+      "name": "???",
+      "element": "EARTH"
+    },
+    {
+      "id": 130,
+      "name": "???",
+      "element": "AQUA"
+    },
+    {
+      "id": 132,
+      "name": "Minova",
+      "element": "LIGHT"
+    },
+    {
+      "id": 133,
+      "name": "Nazuka",
+      "element": "WIND"
+    },
+    {
+      "id": 134,
+      "name": "Fuyuka",
+      "element": "FIRE"
+    },
+    {
+      "id": 135,
+      "name": "Mistique",
+      "element": "DARK"
+    },
+    {
+      "id": 136,
+      "name": "???",
+      "element": "WIND"
+    },
+    {
+      "id": 141,
+      "name": "Chixia",
+      "element": "FIRE"
+    },
+    {
+      "id": 142,
+      "name": "Cosette",
+      "element": "DARK"
+    },
+    {
+      "id": 143,
+      "name": "???",
+      "element": "WIND"
+    },
+    {
+      "id": 144,
+      "name": "Chitose",
+      "element": "AQUA"
+    },
+    {
+      "id": 145,
+      "name": "???",
+      "element": "DARK"
+    },
+    {
+      "id": 147,
+      "name": "Caramel",
+      "element": "DARK"
+    },
+    {
+      "id": 149,
+      "name": "Gerie",
+      "element": "EARTH"
+    },
+    {
+      "id": 150,
+      "name": "Laru",
+      "element": "LIGHT"
+    },
+    {
+      "id": 155,
+      "name": "Shia",
+      "element": "LIGHT"
+    },
+    {
+      "id": 156,
+      "name": "Nazuna",
+      "element": "EARTH"
+    },
+    {
+      "id": 158,
+      "name": "???",
+      "element": "FIRE"
+    },
+    {
+      "id": 159,
+      "name": "???",
+      "element": "EARTH"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Package Files #
+*.rpm
+
+# Eclipse IDE #
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+.factorypath
+
+# NetBeans IDE #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+bin/
+doc/
+.DS_Store
+
+# IntelliJ IDEA IDE #
+*.ipr
+*.iws
+*.iml
+.idea/
+out/
+
+# OS #
+Thumbs.db
+
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle #
+.gradle
+build/
+
+# Build #
+*.o
+*.oa
+*.obj
+*.exe
+*.so
+*.dll
+*.lib
+*.tmp
+*.exp
+*.debug
+*.pdb
+*.x86
+*.x64
+
+# Logs #
+logs/*.log
+!logs/.gitkeep
+
+# Database #
+*.db

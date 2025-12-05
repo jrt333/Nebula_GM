@@ -1,0 +1,142 @@
+package emu.nebula.nbcommand.service.command;
+
+import emu.nebula.nbcommand.model.Command;
+import emu.nebula.nbcommand.model.command.Syntax;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Control;
+import javafx.scene.control.TextField;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.time.Duration;
+import java.util.Map;
+import java.util.function.Consumer;
+
+public class CommandExecutor {
+    private static final Logger logger = LoggerFactory.getLogger(CommandExecutor.class);
+
+    private String serverAddress;
+    private String authToken;
+
+    public CommandExecutor(String serverAddress, String authToken) {
+        this.serverAddress = serverAddress;
+        this.authToken = authToken;
+    }
+
+    /**
+     * 更新配置
+     */
+    public void updateConfiguration(String serverAddress, String authToken) {
+        this.serverAddress = serverAddress;
+        this.authToken = authToken;
+    }
+
+    /**
+     * 构建要发送的命令文本
+     */
+    public String buildCommandText(Command command, Map<String, Control> parameterControls) {
+        StringBuilder commandText = new StringBuilder();
+        
+        // 遍历语法定义中的字段
+        for (Syntax.Field field : command.syntax().getFields()) {
+            String originalName = field.getOriginalName();
+            
+            // 第一个字段作为命令名称
+            if (commandText.isEmpty()) {
+                commandText.append(originalName);
+                continue;
+            }
+            
+            // 查找对应控件的值
+            Control control = parameterControls.get(originalName);
+            
+            if (control != null) {
+                String value = "";
+                if (control instanceof TextField) {
+                    value = ((TextField) control).getText();
+                } else if (control instanceof ComboBox) {
+                    String selected = (String) ((ComboBox) control).getSelectionModel().getSelectedItem();
+                    String input = ((ComboBox) control).getEditor().getText();
+                    value = selected != null ? selected : input != null ? input : "";
+                }
+
+                // 只有当值非空时才添加到命令中
+                if (!value.isEmpty()) {
+                    commandText.append(" ");
+                    // 对于包含" - "的值（如"10001 - 物品名"），只取ID部分
+                    if (value.contains(" - ")) {
+                        value = value.substring(0, value.indexOf(" - "));
+                    }
+
+                    if (field.getFieldMode() == Syntax.FieldMode.SPECIAL_PREFIX) {
+                        // 使用实际的前缀字符，而不是固定的"x"
+                        commandText.append(field.getSpecialPrefix()).append(value);
+                    } else {
+                        commandText.append(value);
+                    }
+                }
+            }
+        }
+
+        return commandText.toString();
+    }
+
+    /**
+     * 发送命令到服务器的通用方法
+     */
+    public HttpResponse<String> sendCommandToServer(String commandText) {
+        // 发送POST请求到服务器
+        try {
+            try (HttpClient client = HttpClient.newBuilder()
+                    .connectTimeout(Duration.ofSeconds(10))
+                    .build()) {
+
+                String jsonBody = "{\"token\": \"" + authToken +
+                        "\", \"command\": \"" + commandText + "\"}";
+
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create(serverAddress + "/api/command"))
+                        .timeout(Duration.ofSeconds(30))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
+                        .build();
+
+                return client.send(request, HttpResponse.BodyHandlers.ofString());
+            }
+        } catch (Exception e) {
+            logger.error("发送命令时发生异常", e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 执行命令
+     */
+    public void executeCommand(String uid, String commandText, Consumer<String> historyConsumer) {
+        try {
+            if (uid != null && !uid.isEmpty()) {
+                commandText += " @" + uid;
+            }
+
+            HttpResponse<String> response = sendCommandToServer(commandText);
+
+            if (response.statusCode() == 200) {
+                historyConsumer.accept("> " + commandText + "\n" + response.body());
+                logger.info("命令执行成功: {}; 服务端返回: {}", commandText, response.body());
+            } else {
+                historyConsumer.accept(response.statusCode() + " - " + response.body());
+                logger.error("命令执行失败: {} - {}", response.statusCode(), response.body());
+            }
+        } catch (Exception e) {
+            historyConsumer.accept("command sends exceptions: " + e.getMessage());
+            logger.error("发送命令时发生异常", e);
+
+            if (e.getMessage().equals("java.net.ConnectException"))
+                historyConsumer.accept("Please check if the remote server is online");
+        }
+    }
+}
